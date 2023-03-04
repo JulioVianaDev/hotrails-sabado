@@ -1,2 +1,5 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<h1>Vendo <%= @post.id %>º post: </h1>
+<%= @position %>
+<h2> <%= @post.title %> </h2>
+<p><%= @post.body %></p>
+<%= link_to 'Editar este post', edit_post_path(@post) %>

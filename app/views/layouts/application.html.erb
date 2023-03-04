@@ -11,6 +11,10 @@
   </head>
 
   <body>
+  <nav class="nav  navbar-expand-lg  bg-dark nav-dark">
+    <%= link_to "home", root_path%>
+    <%= link_to "posts", posts_path%>
+  </nav>
     <%= yield %>
   </body>
 </html>

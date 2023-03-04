@@ -4,3 +4,6 @@ import "controllers"
 
 //= require turbolinks
 //= require hotwire
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
