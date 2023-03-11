@@ -6,8 +6,8 @@
     Logado com sucesso
   </p>
   <% if current_user.admin? %>
-    <h1> tem <%= User.count %> na aplicação </h1>
-  <%end%>
+    <h1> tem <%= User.count %> usuario na aplicação </h1>
+  <% end %>
 
   <%= link_to "Sair", destroy_user_session_path, 'data-turbo-method': :delete%>
 <% else %>
