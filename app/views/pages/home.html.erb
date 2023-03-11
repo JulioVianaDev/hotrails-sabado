@@ -1,2 +1,12 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Meu site</h1>
+<p>blablabla</p>
+<% if current_user %>
+  <p> Olá <%= current_user.email %></p>
+  <p>
+    Logado com sucesso
+  </p>
+<% else %>
+  <p> Não está logado</p>
+  <%= link_to "Logar",new_user_session_path%>
+  <%= link_to "Criar Conta",new_user_registration_path%>
+<% end %>
